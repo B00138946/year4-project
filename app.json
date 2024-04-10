@@ -10,21 +10,53 @@
       "image": "./assets/splash.png",
       "resizeMode": "contain",
       "backgroundColor": "#ffffff"
+      
     },
     "assetBundlePatterns": [
       "**/*"
     ],
     "ios": {
-      "supportsTablet": true
+      "supportsTablet": true,
+      "infoPlist": {
+        "UIBackgroundModes": ["audio"]
+      }
+      
     },
     "android": {
       "adaptiveIcon": {
         "foregroundImage": "./assets/adaptive-icon.png",
         "backgroundColor": "#ffffff"
-      }
+      },
+      "permissions": [
+        "android.permission.RECORD_AUDIO"
+        
+      ]
     },
     "web": {
       "favicon": "./assets/favicon.png"
+    },
+    
+    "extra": {
+      "eas": {
+        "projectId": "4d3246f7-bbce-4470-b223-9f8ed648fc4f"
+      },
+
+      "plugins": [
+        [
+          "@react-native-voice/voice",
+          {
+            "microphonePermission": "Allow Voice to Text Tutorial to access the microphone",
+            "speechRecognitionPermission": "Allow Voice to Text Tutorial to securely recognize user speech"
+    
+          }
+        ],
+        [
+          "expo-image-picker",
+          {
+            "photosPermission": "The app accesses your photos to let you share them with your friends."
+          }
+        ]
+      ]
     }
   }
 }
