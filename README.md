@@ -16,6 +16,7 @@ select correct word that is heard will make the game challenging and make learni
 fun. Another aim of the project is building a chatbot specifically designed for children.
 Children will be able to ask questions on learning. Also, developing a parental feature
 such as screen time limit which allowed the children limit the time spend on the app.
+Walk-through video on Youtube: https://youtu.be/tYUaterfSYg
 
 
   
